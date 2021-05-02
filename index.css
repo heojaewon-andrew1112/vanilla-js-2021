@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+body {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.js-clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.js-name-greet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -110px;
+}
+
+.js-greetings {
+  font-size: 60px;
+  font-weight: 800;
+  margin: 0;
+  line-height: normal;
+  font-family: "Asap";
+  text-shadow: -0.08em 0.08em #090d27;
+  margin-top: -60px;
+}
+
+input {
+  width: 700px;
+  background: 0;
+  border: 0;
+  border-bottom: 6px solid #fff;
+  color: #fff;
+  font-size: 2.25em;
+  line-height: 1.2;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+.js-clock h1 {
+  font-size: 1050%;
+  letter-spacing: -5%;
+  font-family: "Paytone One";
+  text-shadow: #2a3d4e 1px 1px, #2a3d4e -0px 0px, #2a3d4e -1px 1px,
+    #2a3d4e -2px 2px, #2a3d4e -3px 3px, #2a3d4e -4px 4px, #2a3d4e -5px 5px,
+    #2a3d4e -6px 6px, #2a3d4e -7px 7px, #2a3d4e -8px 8px, #2a3d4e -9px 9px;
+}
+
+.js-toDo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.js-showtoDo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.js-pending,
+.js-finished {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 355px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+.js-subtitle {
+  margin: 30px 60px;
+}
+
+.weather-container {
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background: #354962;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Paytone One";
+  text-shadow: #2a3d4e 1px 1px, #2a3d4e -0px 0px, #2a3d4e -1px 1px,
+    #2a3d4e -2px 2px, #2a3d4e -3px 3px, #2a3d4e -4px 4px, #2a3d4e -5px 5px,
+    #2a3d4e -6px 6px, #2a3d4e -7px 7px, #2a3d4e -8px 8px, #2a3d4e -9px 9px;
+}
+
+.audio-player {
+  position: fixed;
+  bottom: 0;
+}
