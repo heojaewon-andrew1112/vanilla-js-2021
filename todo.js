@@ -116,7 +116,7 @@ function handleForSubmit(event){
     event.preventDefault();
     const taskObj = getTaskObject(toDoinput.value);
     toDoinput.value="";
-    paintingPendingTask(taskObj);
+    paintPendingTask(taskObj);
     savePendingTask(taskObj);
     saveState();
 }
