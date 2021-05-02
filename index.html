@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="js-clock">
+      <h1>00:00</h1>
+    </div>
+    <div class="js-name-greet">
+      <form class="js-form form">
+        <input type="text" placeholder="What is your name?" />
+      </form>
+      <h4 class="js-greetings greetings"></h4>
+    </div>
+    <div class="js-toDo">
+      <form id="js-toDoForm">
+        <input type="text" placeholder="Write a to do" />
+      </form>
+    </div>
+    <div class="js-showtoDo">
+      <div class="js-pending">
+        <h2 class="js-subtitle">Pending</h2>
+        <ul id="js-pending-list"></ul>
+      </div>
+      <div class="js-finished">
+        <h2 class="js-subtitle">Finished</h2>
+        <ul id="js-finished-list"></ul>
+      </div>
+    </div>
+    <div class="weather-container">
+      <div class="weather-temp">
+        <div class="current-temp"></div>
+        <div class="place-name"></div>
+        <div class="feels-like">체감온도</div>
+        <div class="max-temp"></div>
+        <div class="min-temp"></div>
+      </div>
+    </div>
+    <div class="audio-player">
+      <audio id="audioContainer">
+        <source id="audioSource" src="" />
+        Your browser does not support the audio format
+      </audio>
+      <div class="js-onOffWrap">
+        <button class="js-playBtn">♬ Play Music</button>
+        <button class="js-stopBtn">♬ Stop Music</button>
+      </div>
+      <div class="js-audioNextBtn">⏯</div>
+    </div>
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="bg.js"></script>
+    <script src="todo.js"></script>
+    <script src="weather.js"></script>
+    <script src="audioPlayer.js"></script>
+  </body>
+</html>
